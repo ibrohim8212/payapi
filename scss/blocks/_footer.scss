@@ -2,6 +2,10 @@
   background-color: #1B262F;
   padding-bottom: 30px;
   padding-top: 30px;
+  background-image: url(../img/big-ball.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 751px) calc(50% + 159px);
+  background-size: 780px, 780px;
 }
 
 .footer__box{
@@ -66,7 +70,17 @@
   fill: #DA6D97;
 }
 
+@media screen and (max-width:800px){
+  .footer{
+    background-position: calc(50% + 414px) calc(50% + 159px);
+  }
+}
+
 @media screen and (max-width:660px) {
+  .footer {
+    background-position: calc(50% + 14px) calc(50% + 394px);
+  }
+  
   .footer__box{
     flex-direction: column;
   }

@@ -95,6 +95,10 @@
 }
 
 @media screen and (max-width:545px) {
+.about{
+  background-position: center calc(50% - 503px);
+}
+
   .about__logos{
     display: flex;
     justify-content: space-between;
