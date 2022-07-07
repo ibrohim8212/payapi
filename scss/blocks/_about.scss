@@ -1,0 +1,144 @@
+.about{
+  background-color: #1B262F;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  background-image: url(../img/big-ball.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 559px) calc(50% - 202px);
+  background-size: 780px, 780px;
+}
+
+.about__box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__title{
+  max-width: 445px;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FBFCFE;
+}
+
+.about__title-mini{
+  max-width: 445px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #FBFCFE;
+}
+
+.about__button{
+  border: 1px solid #FBFCFE;
+  border-radius: 24px;
+  color: #fff;
+  background-color: #1B262F;
+  width: 129px;
+  height: 48px;
+}
+
+.about__button:hover{
+  color: #1B262F;
+  background-color: #fff;
+}
+
+.about__button:active{
+  border: 1px solid #8A9196;
+  background-color: #1B262F;
+  color: #8A9196;
+}
+
+.about__logos-top{
+  display: flex;
+  align-items: center;
+}
+
+.about__img-microsoft{
+  margin-left: 62px;
+  margin-right: 60px;
+}
+
+.about__logos-bottom{
+  display: flex;
+  align-items: center;
+  margin-top: 39px;
+}
+
+.about__img-google{
+  margin-left: 85px;
+  margin-right: 87px;
+}
+
+@media screen and (max-width:769px) {
+  .about__box{
+    flex-direction: column-reverse;
+  }
+  
+  .about__title{
+    text-align: center;
+  }
+  
+  .about__title-mini{
+    text-align: center;
+  }
+  
+  .about__button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width:545px) {
+  .about__logos{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .about__logos-top{
+    flex-direction: column;
+  }
+  
+  .about__img-microsoft{
+    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 44px;
+  }
+  
+  .about__logos-bottom{
+    flex-direction: column;
+    margin: 0;
+    margin-left: 50px;
+  }
+  
+  .about__img-google{
+    margin: 0;
+    margin-bottom: 48px;
+    margin-top: 42px;
+  }
+}
+
+@media screen and (max-width:440px) {
+  .about__title{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  
+  .about__title-mini{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width:335px){
+  .about__logos-bottom{
+    margin-left: 10px;
+  }
+}
